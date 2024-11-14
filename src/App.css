@@ -26,7 +26,7 @@ body {
 
 
   nav {
-     background-color: darkgreen;
+    background-color: darkgreen;
     padding: 0px;
     text-align: center;
     display: flex;
@@ -44,7 +44,7 @@ body {
     margin-right: 20px;
   }
 
-  .navbar{
+  .navbar {
     margin-right: 30px;
   }
 
@@ -110,4 +110,31 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Hace que el contenedor ocupe toda la altura de la pantalla */
+}
+
+header,
+footer {
+  flex-shrink: 0;
+  /* Evita que el header o el footer se reduzcan */
+}
+
+.main-content {
+  flex-grow: 1;
+  /* Hace que el contenido principal ocupe el espacio restante */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.centrado {
+  text-align: center;
 }
