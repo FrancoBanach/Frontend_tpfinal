@@ -7,8 +7,8 @@ export default function ListadoPacientes() {
             "paciente_id": 1,
             "numero_historia_clinica": 1001,
             "dni": "12345678A",
-            "nombre": "Juan",
-            "apellido": "Pérez",
+            "nombre": "Jorge",
+            "apellido": "Franco",
             "domicilio": "Calle Falsa 123",
             "codigo_postal": 28001,
             "telefono": "123-456-789"
