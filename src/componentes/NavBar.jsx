@@ -1,15 +1,27 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function NavBar() {
     return (
-        <div>
-            <ul>
-                <li>
-                    <NavLink exact to="/" activeClassName="active">HomePage</NavLink>
-                </li>
-            </ul>
-
-        </div>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <div className="container-fluid">
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/">Home</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/medicos">Medicos</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/pacientes">Pacientes</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/turnos"> Turnos </Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     )
 }

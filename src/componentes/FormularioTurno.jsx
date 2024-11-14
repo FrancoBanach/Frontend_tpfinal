@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
+import '../app.css';
 
- function FormularioTurno ()  {
+function FormularioTurno() {
     const [nombre, setNombre] = useState('');
     const [email, setEmail] = useState('');
     const [fecha, setFecha] = useState('');
     const [hora, setHora] = useState('');
     const [medico, setMedico] = useState('');
 
-   
+
 
     const medicos = [
         { nombre: 'Dr. Jose Fernandez', especialidad: 'cirugia', mat: '9821' },
@@ -16,7 +17,7 @@ import React, { useState } from 'react';
         { nombre: 'Dra. Rosana Perez', especialidad: 'ginecologia', mat: '6324' },
         { nombre: 'Dr. Victor gomez', especialidad: 'cardiologia', mat: '5213' },
         { nombre: 'Dr. Esteban Garcia', especialidad: 'traumatologia', mat: '32141' },
-        
+
     ];
 
     const handleSubmit = (e) => {
