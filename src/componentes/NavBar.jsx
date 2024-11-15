@@ -19,6 +19,11 @@ export default function NavBar() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/turnos"> Turnos </Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/turnos"> Nosotros </Link>
+                        </li>
+                        
+
                     </ul>
                 </div>
             </div>
