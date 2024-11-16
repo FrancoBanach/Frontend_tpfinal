@@ -5,6 +5,7 @@ import HomePage from "./componentes/HomePage"
 import ListadoMedicos from "./componentes/ListadoMedicos"
 import ListadoPacientes from "./componentes/ListadoPacientes"
 import FormularioTurno from "./componentes/FormularioTurno"
+import Nosotros from "./componentes/Nosotros"
 export default function App() {
 
 
@@ -17,7 +18,7 @@ export default function App() {
           <Route path="/medicos" element={<ListadoMedicos />} />
           <Route path="/pacientes" element={<ListadoPacientes />} />
           <Route path="/turnos" element={<FormularioTurno />} />
-
+          <Route path="/Nosotros" element={<Nosotros/>} />
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </div>
