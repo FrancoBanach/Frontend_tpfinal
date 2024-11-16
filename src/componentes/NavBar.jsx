@@ -1,32 +1,33 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
 
-export default function NavBar() {
-    return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-            <div className="container-fluid">
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/">Home</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/medicos">Medicos</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/pacientes">Pacientes</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/turnos"> Turnos </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/Nosotros"> Nosotros </Link>
-                        </li>
-                        
+import '../app.css'; // Asegúrate de que este archivo contenga los estilos necesarios
 
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    )
+export default function NavBar() {
+  return (
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav me-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/medicos">Medicos</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/pacientes">Pacientes</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/turnos">Turnos</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Nosotros">Nosotros</Link>
+            </li>
+          </ul>
+          <button className="btn btn-login">Iniciar Sesión</button>
+        </div>
+      </div>
+    </nav>
+  );
 }
