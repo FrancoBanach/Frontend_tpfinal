@@ -6,6 +6,8 @@ import ListadoMedicos from "./componentes/ListadoMedicos"
 import ListadoPacientes from "./componentes/ListadoPacientes"
 import FormularioTurno from "./componentes/FormularioTurno"
 import Nosotros from "./componentes/Nosotros"
+import Login from "./componentes/Login"
+
 export default function App() {
 
 
@@ -19,7 +21,8 @@ export default function App() {
           <Route path="/pacientes" element={<ListadoPacientes />} />
           <Route path="/turnos" element={<FormularioTurno />} />
           <Route path="/Nosotros" element={<Nosotros/>} />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="/Login" element={<Login />} />
+
         </Routes>
       </div>
     </BrowserRouter>

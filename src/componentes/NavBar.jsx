@@ -24,8 +24,11 @@ export default function NavBar() {
             <li className="nav-item">
               <Link className="nav-link" to="/Nosotros">Nosotros</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Login">Iniciar Sesion</Link>
+            </li>
           </ul>
-          <button className="btn btn-login">Iniciar Sesión</button>
+          
         </div>
       </div>
     </nav>
