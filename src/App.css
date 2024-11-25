@@ -1,0 +1,217 @@
+body {
+  background-color: #28a745; /* Color de fondo verde */
+  color: black; /* Letras negras */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 100vw; /* Asegura que el body ocupe todo el ancho de la pantalla */
+  height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+}
+
+/* Estilos generales */
+.centrado {
+  text-align: center;
+  font-size: 40px; /* Tamaño de fuente más grande */
+}
+
+.container {
+  background-color: #28a745; /* Hereda el color de fondo del body */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla*/
+ width: 100%; /*Asegura que el contenedor ocupe todo el ancho de la pantalla */
+} 
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: inherit; /* Hereda el color de fondo del body */
+  width: 100%; /* Asegura que el contenido principal ocupe todo el ancho de la pantalla */
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image-container img {
+  display: block;
+  margin: 0 auto;
+}
+
+.image-container figcaption {
+  font-size: 14px;
+  color: #29f416;
+  margin-top: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #41f805;
+  padding: 0px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  background-color: #41f805;
+  color: black ;
+  margin: 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: bold; /* Hace que las letras sean en negrita */
+}
+
+.navbar {
+  margin-right: 0px;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+nav button {
+  color: darkgreen;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold; /* Hace que las letras sean en negrita */
+}
+
+nav button:hover {
+  /* color: rgb(66, 240, 43); */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input {
+  padding: 8px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #fafcfdf3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #41f805;
+  font-weight: bold; /* Hace que las letras sean en negrita */
+  font-size: 18px; /* Ajusta el tamaño de la fuente */
+}
+
+header,
+footer {
+  flex-shrink: 0;
+}
+
+.main-content {
+  background-color: #28a745;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.turno-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.turno-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.turno-form .form-group {
+  margin-bottom: 15px;
+}
+
+.turno-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.turno-form .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.turno-form .btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.turno-form .btn:hover {
+  background-color: #0056b3;
+}
